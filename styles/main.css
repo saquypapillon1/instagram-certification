@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --color-bg: #F3EEF8;
     --color-accent: #FCDF78;
     --color-text: #857E81;
@@ -19,6 +19,37 @@ body {
     padding-top: 80px;
 }
 
+/* Logo et Navigation */
+.logo {
+    width: 200px;
+    height: auto;
+    overflow: visible;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: var(--color-secondary);
+}
+
 /* Header et Navigation */
 .main-header {
     padding: 1rem 2rem;
@@ -37,22 +68,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-
-.nav-links a {
-    color: var(--color-text);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--color-secondary);
+    gap: 1rem;
 }
 
 .cta-button {
@@ -62,10 +78,13 @@ body {
     border-radius: 25px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(252, 223, 120, 0.4);
 }
 
 /* Section Hero */
@@ -97,6 +116,7 @@ body {
     font-size: 1.1rem;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 500;
 }
 
 .primary-button:hover {
@@ -108,67 +128,88 @@ body {
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
+        align-items: center;
+        padding: 1rem;
         gap: 1rem;
-        padding: 1rem 0;
     }
 
     .logo {
-        max-width: 150px;  /* Réduire la taille du logo */
+        width: 180px;
     }
 
     .nav-links {
-        display: none;  /* Cache les liens sur mobile */
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
     }
     
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .hero p {
         font-size: 1rem;
     }
     
-    .main-header {
-        padding: 0.8rem 1rem;
-    }
-    
     .cta-button {
-        width: 90%;  /* Bouton plus large sur mobile */
-        padding: 0.8rem 1.2rem;
+        width: auto;
+        padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
-        margin: 0 auto;  /* Centre le bouton */
     }
 }
 
 @media (max-width: 480px) {
     body {
-        padding-top: 120px;  /* Augmente l'espace pour le header */
+        padding-top: 160px;
     }
     
     .main-header {
-        padding: 0.5rem;
-    }
-
-    .nav-container {
-        gap: 0.5rem;
+        padding: 0.8rem 0.5rem;
     }
 
     .logo {
-        max-width: 120px;  /* Encore plus petit sur très petits écrans */
+        width: 150px;
+    }
+
+    .nav-links {
+        gap: 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .nav-links a {
+        padding: 0.3rem 0.6rem;
     }
     
     .hero {
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
     }
     
+    .cta-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
     .primary-button {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
-        width: 90%;
+        width: auto;
     }
+}
 
-    .cta-button {
-        font-size: 0.85rem;
-        padding: 0.7rem 1rem;
+/* Animations */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
     }
 }
