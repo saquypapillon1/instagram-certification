@@ -1,3 +1,4 @@
+$htmlContent = @'
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -106,7 +107,7 @@
                                 <span class="file-selected"></span>
                             </label>
                         </div>
-                        <p class="upload-info">Formats acceptés : JPG, PNG, PDF (Max 5MB)</p>
+                        <p class="upload-info">Format acceptés : JPG, PNG, PDF (Max 5MB)</p>
                     </div>
 
                     <div class="btn-group">
@@ -162,3 +163,7 @@
     <script src="scripts/form.js"></script>
 </body>
 </html>
+'@
+
+$Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+[System.IO.File]::WriteAllLines("index.html", $htmlContent, $Utf8NoBomEncoding)
