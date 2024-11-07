@@ -133,73 +133,32 @@ body {
         gap: 1rem;
     }
 
+    /* Logo et Navigation */
+.logo {
+    width: 300px;  /* Augmenté de 200px à 300px */
+    height: auto;
+    overflow: visible;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;  /* Ajouté pour garantir la taille maximale */
+}
+
+/* Dans la section media queries, modifiez les tailles pour mobile */
+@media (max-width: 768px) {
     .logo {
-        width: 180px;
+        width: 250px;  /* Ajusté pour tablettes */
     }
-
-    .nav-links {
-        display: flex;
-        gap: 1rem;
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .nav-links a {
-        font-size: 0.9rem;
-    }
-    
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-    
-    .hero p {
-        font-size: 1rem;
-    }
-    
-    .cta-button {
-        width: auto;
-        padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
-    }
+    /* ... reste du code ... */
 }
 
 @media (max-width: 480px) {
-    body {
-        padding-top: 160px;
-    }
-    
-    .main-header {
-        padding: 0.8rem 0.5rem;
-    }
-
     .logo {
-        width: 150px;
+        width: 220px;  /* Ajusté pour mobiles */
     }
-
-    .nav-links {
-        gap: 0.8rem;
-        font-size: 0.85rem;
-    }
-
-    .nav-links a {
-        padding: 0.3rem 0.6rem;
-    }
-    
-    .hero {
-        padding: 1.5rem 1rem;
-    }
-    
-    .cta-button {
-        padding: 0.7rem 1.2rem;
-        font-size: 0.85rem;
-    }
-
-    .primary-button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-        width: auto;
-    }
+    /* ... reste du code ... */
 }
 
 /* Animations */
