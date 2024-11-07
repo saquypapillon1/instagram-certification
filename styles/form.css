@@ -134,6 +134,7 @@
     margin-bottom: 2rem;
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .file-upload {
@@ -142,6 +143,7 @@
     height: 100px;
     background: white;
     border-radius: 8px;
+    width: 100%;
 }
 
 .file-upload input[type="file"] {
@@ -173,6 +175,8 @@
     transition: all 0.3s ease;
     background: white;
     z-index: 1;
+    text-align: center;
+    width: 100%;
 }
 
 .upload-icon {
@@ -182,6 +186,8 @@
 .upload-text {
     color: var(--color-text);
     text-align: center;
+    width: 100%;
+    padding: 0 1rem;
 }
 
 .file-selected {
@@ -189,6 +195,8 @@
     color: var(--color-text);
     font-size: 0.9rem;
     text-align: center;
+    width: 100%;
+    padding: 0 1rem;
 }
 
 .upload-info {
