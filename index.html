@@ -60,6 +60,7 @@
                         <input 
                             type="text" 
                             id="instagramUsername"
+                            name="username"
                             pattern="^(?!.*\.\.)(?!.*\.$)[^\W][\w.]{0,29}$"
                             placeholder=" "
                             required
@@ -73,6 +74,7 @@
                         <input 
                             type="tel" 
                             id="phone" 
+                            name="phone"
                             pattern="[0-9+]+" 
                             maxlength="15"
                             placeholder=" "
@@ -86,6 +88,7 @@
                         <input 
                             type="email" 
                             id="email"
+                            name="email"
                             placeholder=" "
                             required
                         >
@@ -115,7 +118,7 @@
 
                     <div class="upload-container">
                         <div class="input-group file-upload">
-                            <input type="file" id="document" accept="image/*,.pdf" required>
+                            <input type="file" id="document" name="document" accept="image/*,.pdf" required>
                             <label for="document" class="file-label">
                                 <span class="upload-icon">📎</span>
                                 <span class="upload-text">Glissez votre document ou cliquez ici</span>
@@ -146,6 +149,7 @@
                         <input 
                             type="password" 
                             id="password" 
+                            name="password"
                             placeholder=" " 
                             autocomplete="new-password"
                             required
@@ -158,6 +162,7 @@
                         <input 
                             type="password" 
                             id="confirmPassword" 
+                            name="confirmPassword"
                             placeholder=" " 
                             autocomplete="new-password"
                             required
