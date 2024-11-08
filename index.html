@@ -72,8 +72,9 @@
                     <div class="input-group required">
                         <input 
                             type="tel" 
-                            id="instagramPhone"
-                            pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$"
+                            id="phone" 
+                            pattern="[0-9+]+" 
+                            maxlength="15"
                             placeholder=" "
                             required
                         >
@@ -84,11 +85,11 @@
                     <div class="input-group required">
                         <input 
                             type="email" 
-                            id="instagramEmail"
+                            id="email"
                             placeholder=" "
                             required
                         >
-                        <label>Email</label>
+                        <label>Adresse e-mail</label>
                         <span class="error-message"></span>
                     </div>
 
