@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci - Instagram Certification</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        /* Styles pour la navigation */
+        .nav-container {
+            background: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .logo span {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #262626;
+            font-weight: 500;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .nav-links a:hover {
+            color: #833ab4;
+        }
+
+        /* Styles pour la page de remerciement */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #fafafa;
+            color: #262626;
+            line-height: 1.5;
+        }
+
+        .thank-you-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 1rem;
+        }
+
+        .thank-you-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .thank-you-content h1 {
+            color: #262626;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .thank-you-content p {
+            color: #4a4a4a;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .important-notice {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 1.8rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .important-notice h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #856404;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+        }
+
+        .important-notice p {
+            color: #856404;
+            margin: 0;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        .next-steps {
+            margin: 2rem 0;
+            text-align: left;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .next-steps h2 {
+            color: #262626;
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        .next-steps ol {
+            padding-left: 1.5rem;
+        }
+
+        .next-steps li {
+            color: #4a4a4a;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            font-size: 1.1rem;
+            padding-left: 0.5rem;
+        }
+
+        .back-home {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #0095f6; /* Nouvelle couleur bleue d'Instagram */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+}
+
+.back-home:hover {
+    background: #1877f2; /* Légèrement plus foncé au survol */
+    opacity: 0.95;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 1rem;
+            }
+
+            .thank-you-container {
+                margin: 2rem auto;
+            }
+
+            .thank-you-content {
+                padding: 1.5rem;
+            }
+
+            .thank-you-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .next-steps {
+                padding: 1.5rem;
+            }
+
+            .important-notice {
+                padding: 1.2rem;
+            }
+
+            .back-home {
+                padding: 0.8rem 2rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo span {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .thank-you-content h1 {
+                font-size: 1.5rem;
+            }
+
+            .thank-you-content p,
+            .next-steps li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête -->
+    <nav class="nav-container">
+        <div class="logo">
+            <span>Instagram Certification</span>
+            <svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 445.82 446.33" class="badge-svg">
+                <defs>
+                    <style>
+                        .cls-1{fill:#fff;}
+                        .cls-1,.cls-2{stroke-width:0px;}
+                        .cls-2{fill:#0095f6;}
+                    </style>
+                </defs>
+                <path class="cls-2" d="M163.76,0c1.26.61,2.47,1.17,3.66,1.77,18.51,9.47,37.05,18.87,55.46,28.55,18.52-9.72,37.25-19.05,55.76-28.8,3.49-1.84,4.97-1.11,6.95,2,10.43,16.45,21.15,32.71,31.61,49.14,1.74,2.73,3.72,3.67,6.88,3.8,19.78.84,39.55,1.94,59.33,2.84,2.48.11,3.42.82,3.54,3.45.88,19.61,2.06,39.21,2.86,58.83.13,3.16,1.08,5.14,3.81,6.88,16.44,10.47,32.7,21.19,49.13,31.64,3.11,1.98,3.84,3.46,2,6.95-9.75,18.5-19.08,37.24-28.8,55.76,9.68,18.41,19.08,36.95,28.55,55.46.6,1.19,1.16,2.4,1.77,3.66v6.4c-.61,1.26-1.17,2.47-1.77,3.66-9.47,18.51-18.87,37.05-28.55,55.46,9.72,18.52,19.05,37.25,28.8,55.76,1.84,3.49,1.11,4.97-2,6.95-16.45,10.43-32.71,21.15-49.14,31.61-2.73,1.74-3.67,3.72-3.8,6.88-.84,19.78-1.94,39.55-2.84,59.33-.11,2.48-.82,3.42-3.45,3.54-19.61.88-39.21,2.06-58.83,2.86-3.16.13-5.14,1.08-6.88,3.81-10.47,16.44-21.19,32.7-31.64,49.13-1.98,3.11-3.46,3.84-6.95,2-18.5-9.75-37.24-19.08-55.76-28.8-18.41,9.68-36.95,19.08-55.46,28.55-1.19.6-2.4,1.16-3.66,1.77h-6.4c-1.26-.61-2.47-1.17-3.66-1.77-18.51-9.47-37.05-18.87-55.46-28.55-18.52,9.72-37.25,19.05-55.76,28.8-3.49,1.84-4.97,1.11-6.95-2-10.43-16.45-21.15-32.71-31.61-49.14-1.74-2.73-3.72-3.67-6.88-3.8-19.78-.84-39.55-1.94-59.33-2.84-2.48-.11-3.42-.82-3.54-3.45-.88-19.61-2.06-39.21-2.86-58.83-.13-3.16-1.08-5.14-3.81-6.88C16.44,351.19.18,340.47-16.25,330.02c-3.11-1.98-3.84-3.46-2-6.95,9.75-18.5,19.08-37.24,28.8-55.76-9.68-18.41-19.08-36.95-28.55-55.46-.6-1.19-1.16-2.4-1.77-3.66v-6.4c.61-1.26,1.17-2.47,1.77-3.66,9.47-18.51,18.87-37.05,28.55-55.46-9.72-18.52-19.05-37.25-28.8-55.76-1.84-3.49-1.11-4.97,2-6.95,16.45-10.43,32.71-21.15,49.14-31.61,2.73-1.74,3.67-3.72,3.8-6.88.84-19.78,1.94-39.55,2.84-59.33.11-2.48.82-3.42,3.45-3.54,19.61-.88,39.21-2.06,58.83-2.86,3.16-.13,5.14-1.08,6.88-3.81C94.47,16.44,105.19.18,115.64-16.25c1.98-3.11,3.46-3.84,6.95-2,18.5,9.75,37.24,19.08,55.76,28.8,18.41-9.68,36.95-19.08,55.46-28.55,1.19-.6,2.4-1.16,3.66-1.77h6.4Z"/>
+                <path class="cls-1" d="M320.1,180.66c-1.33.94-2.7,1.66-3.77,2.7-29.44,28.45-58.85,56.94-88.27,85.42-10.04,9.73-20.18,19.36-30.07,29.24-2.43,2.42-3.71,2.05-5.9-.16-21.12-21.26-42.29-42.46-63.58-63.55-2.32-2.3-1.96-3.46.15-5.48,5.78-5.52,11.49-11.12,16.93-16.97,2.51-2.7,3.93-2.2,6.27.17,13.31,13.52,26.88,26.79,40.13,40.38,2.95,3.03,4.5,2.79,7.4-.04,31.57-30.81,63.31-61.43,94.9-92.21,2.4-2.34,3.72-2.79,6.18-.07,5.36,5.92,11.12,11.48,16.7,17.2.79.81,1.5,1.71,2.93,3.36Z"/>
+            </svg>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Processus</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="thank-you-container">
+        <div class="thank-you-content">
+            <h1>Merci pour votre demande !</h1>
+            <p>Nous avons bien reçu votre demande de certification Instagram. Notre équipe va examiner votre dossier dans les plus brefs délais.</p>
+            
+            <div class="important-notice">
+                <h3>⚠️ Information importante</h3>
+                <p>Veuillez noter que si les informations fournies sont incorrectes (nom d'utilisateur Instagram invalide, mot de passe erroné, etc.), votre demande sera automatiquement rejetée sans notification.</p>
+            </div>
+
+            <p>Un email de confirmation vous a été envoyé à l'adresse que vous nous avez fournie.</p>
+            
+            <div class="next-steps">
+                <h2>Prochaines étapes :</h2>
+                <ol>
+                    <li>Vérifiez votre boîte mail pour confirmer votre demande</li>
+                    <li>Notre équipe examinera votre dossier sous 24-48h</li>
+                    <li>Vous recevrez une notification une fois votre badge validé</li>
+                </ol>
+            </div>
+            <a href="index.html" class="back-home">Retour à l'accueil</a>
+        </div>
+    </main>
+</body>
+</html>
