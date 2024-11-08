@@ -6,114 +6,14 @@
     <title>Merci - Instagram Certification</title>
     <link rel="stylesheet" href="./css/main.css">
     <style>
-        /* Styles pour l'en-tête */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: white;
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.logo span {
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #262626;
-    font-weight: 500;
-}
-
-.nav-links a:hover {
-    color: #0095f6;
-}
-
-@media (max-width: 768px) {
-    .nav-container {
-        padding: 1rem;
-    }
-    
-    .nav-links {
-        gap: 1rem;
-    }
-    
-    .logo span {
-        font-size: 1rem;
-    }
-}
-        /* Styles pour la navigation */
-        .nav-container {
-            background: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        .logo span {
-            font-weight: 600;
-            font-size: 1.2rem;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #262626;
-            font-weight: 500;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        .nav-links a:hover {
-            color: #833ab4;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
         }
 
         /* Styles pour la page de remerciement */
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #fafafa;
-            color: #262626;
-            line-height: 1.5;
-        }
-
         .thank-you-container {
             max-width: 800px;
             margin: 4rem auto;
@@ -134,6 +34,7 @@ header {
             font-size: 2.2rem;
             font-weight: 700;
             letter-spacing: -0.5px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
         .thank-you-content p {
@@ -201,31 +102,27 @@ header {
         }
 
         .back-home {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    background: #0095f6; /* Nouvelle couleur bleue d'Instagram */
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    margin-top: 2rem;
-    transition: all 0.3s ease;
-    font-size: 1.1rem;
-    letter-spacing: 0.3px;
-}
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: #0095f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            letter-spacing: 0.3px;
+        }
 
-.back-home:hover {
-    background: #1877f2; /* Légèrement plus foncé au survol */
-    opacity: 0.95;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
+        .back-home:hover {
+            background: #1877f2;
+            opacity: 0.95;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
 
         @media (max-width: 768px) {
-            .nav-container {
-                padding: 1rem;
-            }
-
             .thank-you-container {
                 margin: 2rem auto;
             }
@@ -253,14 +150,6 @@ header {
         }
 
         @media (max-width: 480px) {
-            .logo span {
-                font-size: 1rem;
-            }
-
-            .nav-links {
-                gap: 1rem;
-            }
-
             .thank-you-content h1 {
                 font-size: 1.5rem;
             }
@@ -273,19 +162,6 @@ header {
     </style>
 </head>
 <body>
-    <!-- En-tête -->
-    <header>
-        <nav class="nav-container">
-            <div class="logo">
-                <span>Instagram Certification</span>
-                <svg class="badge-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M9.75008 1.45833C9.95844 1.45833 10.1668 1.45833 10.3751 1.45833C10.4168 1.5 10.4584 1.54166 10.5001 1.54166C11.3334 1.875 12.1668 2.20833 13.0001 2.54166C13.0418 2.54166 13.0834 2.54166 13.1251 2.58333C13.9168 2.91666 14.7084 3.25 15.5001 3.58333C15.5418 3.58333 15.5834 3.625 15.6251 3.625C15.7918 3.70833 15.8751 3.83333 15.8751 4.04166C15.8751 4.875 15.8751 5.70833 15.8751 6.54166C15.8751 6.625 15.8751 6.70833 15.9168 6.75C16.2918 7.41666 16.6668 8.04166 17.0418 8.70833C17.1251 8.83333 17.1251 8.95833 17.0418 9.08333C16.6668 9.75 16.2918 10.375 15.9168 11.0417C15.8751 11.125 15.8751 11.2083 15.8751 11.2917C15.8751 12.125 15.8751 12.9583 15.8751 13.7917C15.8751 14 15.7918 14.125 15.6251 14.2083C14.7918 14.5417 13.9584 14.875 13.1251 15.2083C13.0834 15.2083 13.0418 15.25 13.0001 15.25C12.1668 15.5833 11.3334 15.9167 10.5001 16.25C10.4584 16.25 10.4168 16.2917 10.3751 16.2917C10.1668 16.2917 9.95844 16.2917 9.75008 16.2917C9.70841 16.25 9.66675 16.2083 9.62508 16.2083C8.79175 15.875 7.95841 15.5417 7.12508 15.2083C7.08341 15.2083 7.04175 15.1667 7.00008 15.1667C6.20841 14.8333 5.41675 14.5 4.62508 14.1667C4.58341 14.1667 4.54175 14.125 4.50008 14.125C4.33341 14.0417 4.25008 13.9167 4.25008 13.7083C4.25008 12.875 4.25008 12.0417 4.25008 11.2083C4.25008 11.125 4.25008 11.0417 4.20841 11C3.83341 10.3333 3.45841 9.70833 3.08341 9.04166C3.00008 8.91666 3.00008 8.79166 3.08341 8.66666C3.45841 8 3.83341 7.375 4.20841 6.70833C4.25008 6.625 4.25008 6.54166 4.25008 6.45833C4.25008 5.625 4.25008 4.79166 4.25008 3.95833C4.25008 3.77499 4.33341 3.64999 4.50008 3.56666C5.33341 3.23333 6.16675 2.89999 7.00008 2.56666C7.04175 2.56666 7.08341 2.52499 7.12508 2.52499C7.95841 2.19166 8.79175 1.85833 9.62508 1.52499C9.66675 1.52499 9.70841 1.48333 9.75008 1.45833ZM10.0001 9.99999C11.1251 9.99999 12.0001 9.12499 12.0001 7.99999C12.0001 6.87499 11.1251 5.99999 10.0001 5.99999C8.87508 5.99999 8.00008 6.87499 8.00008 7.99999C8.00008 9.12499 8.87508 9.99999 10.0001 9.99999Z" fill="#0095F6"/>
-                    <path d="M10.0001 11C11.6834 11 13.0001 9.68333 13.0001 8C13.0001 6.31667 11.6834 5 10.0001 5C8.31674 5 7.00008 6.31667 7.00008 8C7.00008 9.68333 8.31674 11 10.0001 11ZM10.0001 6C11.1251 6 12.0001 6.875 12.0001 8C12.0001 9.125 11.1251 10 10.0001 10C8.87508 10 8.00008 9.125 8.00008 8C8.00008 6.875 8.87508 6 10.0001 6Z" fill="white"/>
-                </svg>
-            </div>
-        </nav>
-    </header>
-
     <!-- Contenu principal -->
     <main class="thank-you-container">
         <div class="thank-you-content">
