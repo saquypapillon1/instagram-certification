@@ -245,3 +245,13 @@ body {
         transform: translateY(0); 
     }
 }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.badge-svg {
+    display: inline-block;
+    vertical-align: middle;
+}
