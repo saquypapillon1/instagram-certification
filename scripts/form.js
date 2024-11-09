@@ -165,7 +165,7 @@
         });
     });
 
-    // Validation du formulaire et redirection
+    // Validation du formulaire et soumission
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         const lastStep = steps[steps.length - 1];
@@ -184,8 +184,8 @@
                 return;
             }
 
-            // Si tout est valide, redirige vers la page de remerciement
-            window.location.href = 'merci.html';
+            // Si tout est valide, soumet le formulaire
+            this.submit();
         }
     });
 
